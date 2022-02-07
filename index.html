@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="todayHTML"></h1>
+    <h2 id="timeHTML"></h2>
+    <div class="wrapper">
+      <div class="container">
+        <div class="item-question">
+          <h1 class="item-title-question">Вопрос№1</h1>
+          <p class="item-condition">
+            for (var i = 0; i < 10; i++) { setTimeout(function() {
+            console.log(i); } }; Что выведет консоль и почему?
+          </p>
+          <p class="item-openAnsw">Откройте ответ</p>
+          <div class="item-button">
+            <button class="item-btn btn_answer" >
+              Открыть ответ
+            </button>
+            <button class="item-btn hide" >
+              Скрыть ответ
+            </button>
+          </div>
+        </div>
+        <div class="item-question">
+          <h1 class="item-title-question">Вопрос№2</h1>
+          <span class="item-condition">
+            Write a JavaScript program to display the current day and time in
+            the following format. Sample Output : Today is : Friday. Current
+            time is : 4 PM : 50 : 22
+
+            
+              <p class="item-openAnsw long" id = "openAnswer">Откройте ответ</p>
+              <div class="button-show">
+              <button class="item-btn btn_answer long" id = "DateAndTime">
+                Открыть ответ
+              </button>
+              <button class="item-btn hide long" id = "hidden" >
+                Скрыть ответ
+              </button>
+            </div>
+            <hr />
+            Write a JavaScript function that reverse a number. Example x =
+            32243; Expected Output : 34223
+            
+              <p class="item-openAnsw long" id = "OpenReverse">Откройте ответ</p>
+              <div class="button-show">
+              <button class="item-btn btn_answer long" id ="reverse">
+                Открыть ответ
+              </button>
+            </div>
+            <hr />
+            Write a JavaScript program to calculate the factorial of a number.
+            In mathematics, the factorial of a non-negative integer n, denoted
+            by n!, is the product of all positive integers less than or equal to
+            n. For example, 5! = 5 x 4 x 3 x 2 x 1 = 120
+            
+              <p class="item-openAnsw long">Откройте ответ</p>
+              <div class="button-show">
+              <button class="item-btn btn_answer long" id="numFactorial">
+                Открыть ответ
+              </button>
+            </div>
+            <hr />
+          </span>
+        </div>
+        <div class="item-question">
+          <h1 class="item-title-question">Вопрос№3</h1>
+          <span class="item-condition">
+            Write a simple JavaScript program to join all elements of the
+            following array into a string. Sample array : myColor = ["Red",
+            "Green", "White", "Black"]; Expected Output :
+            "Red,Green,White,Black" "Red+Green+White+Black"
+          </p>
+          <p class="item-openAnsw long" id = "Mycolor">Откройте ответ</p>
+          <div class="item-button-long">
+            <button class="item-btn btn_answer" id = "openMycolor">
+              Открыть ответ
+            </button>
+            <button class="item-btn hide" id = "closeMycolor">
+              Скрыть ответ
+            </button>
+          </div>
+          <hr>
+          Write a JavaScript function to get the month name from a particular date. Test Data : console.log(month_name(new Date("10/11/2009"))); console.log(month_name(new Date("11/13/2014"))); Output : "October" "November"
+          <p class="item-openAnsw long">Откройте ответ</p>
+          <div class="item-button-long">
+            <button class="item-btn btn_answer" onclick="toShow()">
+              Открыть ответ
+            </button>
+            <button class="item-btn hide" onclick="toHide()">
+              Скрыть ответ
+            </button>
+          </div>
+          </span>
+        </div>
+        <div class="item-question">
+            <h1 class="item-title-question">Вопрос№4</h1>
+            <span class="item-condition">
+                Задача №4
+                    Задание 1
+                    <br>
+                    На странице есть верстка:
+                    <br>
+                    <div id="line1">Ядра в вёдра, выдру в тундру!</div>
+                    <br>
+                    <div id="line2">В недрах тундры, выдры в гетрах </div>
+                    <br>
+                    <div id="line3">Выдрав с выдры в тундре гетры</div>
+                    <br>
+                    <div id="line4">Вытру гетрой выдре морду </div>
+                    <br>
+                    <div id="line5">Тырят в вёдра ядра кедров!</div>
+                    <br>
+                    <div id="line6">Вытру выдрой ядра кедров</div>
+                    <br>
+
+                    Необходимо поочередно обратиться к каждому тэгу в нужном порядке, и вывести их содержимое в консоль,
+                    чтобы получилась осмысленная скороговорка.
+                    <br>
+
+                    Вывод в консоли:
+                    <br>
+                    В недрах тундры, выдры в гетрах
+                    <br>
+                    Тырят в вёдра ядра кедров!
+                    <br>
+                    Выдрав с выдры в тундре гетры
+                    <br>
+                    Вытру выдрой ядра кедров
+                    <br>
+                    Вытру гетрой выдре морду
+                    <br>
+                    Ядра в вёдра, выдру в тундру!
+                    <br>
+                    <p class="item-openAnsw long">Откройте ответ</p>
+          <div class="item-button-long">
+            <button class="item-btn btn_answer" onclick="toShow()">
+              Открыть ответ
+            </button>
+            <button class="item-btn hide" onclick="toHide()">
+              Скрыть ответ
+            </button>
+          </div>
+          <hr>
+          <div class = item-question>
+          <h1 class="item-title-question small">Вопрос№4.2</h1>
+          <p>С помощью JS необходимо первым трем элементам задать красный цвет текста, а остальным трем - зеленый.
+
+          </div>
+          <div class="element-item">Element 1</div>
+          <div class="element-item">Element 2</div>
+          <div class="element-item">Element 3</div>
+          <div class="element-item">Element 4</div>
+          <div class="element-item">Element 5</div>
+          <div class="element-item">Element 6</div>
+          <button class="item-btn">Изменить цвета</button>
+          <hr>
+          <div class = item-question>
+            <h1 class="item-title-question small">Вопрос№4.3</h1>
+            <p>
+                На странице есть контейнер
+                < ol id="todo-list">
+                    < /ol>, необходимо с помощью цикла добавить в него пять задач (элементов < li>) с
+                        классом task и текстом, взятым из массива задач из пяти
+                        элементов:
+            </p>
+            <button class = "item-btn long">createToDo</button>
+            
+  
+            </div>
+            </span>
+            
+        </div>
+        <div class="item-question">
+            <span class="item-condition">
+                Вам необходимо с помощью JavaScript вставить после каждого тега < p> тег < hr>, для визуального отделения абзацев друг от друга.
+                <hr>
+                
+                <h1>What is Lorem Ipsum?</h1>
+                <p>Lorem Ipsum is simply dummy text of the 
+                    printing and typesetting industry. Lorem 
+                    Ipsum has been the industry's standard 
+                    dummy text ever since the 1500s, when 
+                    an unknown printer took a galley of type 
+                    and scrambled it to make a type 
+                    specimen book. It has survived not only 
+                    five centuries, but also the leap into 
+                    electronic typesetting, remaining 
+                    essentially unchanged. It was popularised 
+                    in the 1960s with the release of Letraset 
+                    sheets containing Lorem Ipsum passages.</p>
+                <h1>Where does it come from?</h1>
+                <p>Contrary to popular belief, Lorem Ipsum 
+                    is not simply random text. It has roots in 
+                    a piece of classical Latin literature from 
+                    45 BC, making it over 2000 years old. The 
+                    first line of Lorem Ipsum, "Lorem ipsum 
+                    dolor sit amet..", comes from a line in 
+                    section 1.10.32. from "The Extremes of 
+                    Good and Evil" by Cicero</p>
+                <h1>Why do we use it?</h1>
+                <p>It is a long established fact that a reader 
+                    will be distracted by the readable content 
+                    of a page when looking at its layout. The 
+                    point of using Lorem Ipsum is that it has a 
+                    more-or-less normal distribution of 
+                    letters, as opposed to using 'Content 
+                    here, content here', making it look like 
+                    readable English.
+
+                </p>
+                <button class = "item-btn long">добавить hr</button>
+
+
+            </span>
+        </div>
+        <div class="item-question">
+            <span class="item-condition">
+            <h1 class="item-title-question">Вопрос№5</h1>
+            
+            <div id="items-last">
+                <div class="item1">Milk 1 l.<span class="span">x 2</span></div>
+                <div class="item2">Cola 1.5 l. <span class="span">x 1</span></div>
+                <div class="item3">Bread<span class="span">x 2</span></div>
+                <div class="item4">Cheese<span class="span">x 1</span></div>
+                <div class="item5">Chocolate bar<span class="span">x 3</span></div>
+            </div>
+            <button class = "item-btn">Попробовать</button>
+        </span>
+        </div>
+      </div>
+    </div>
+
+    <script src="tasks.js"></script>
+    <script src="tasks#2.js"></script>
+  </body>
+</html>
